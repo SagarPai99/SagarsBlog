@@ -17,6 +17,9 @@ mongoose.connect(MONGO_URI,{useNewUrlParser: true})
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
+
+app.use("/api/users/",require("./routes/api/users"));
+
 app.get("/", (req,res) => {
     res.send("Hello");
 });
