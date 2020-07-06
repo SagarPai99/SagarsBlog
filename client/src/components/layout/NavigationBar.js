@@ -14,12 +14,12 @@ const Navigationbar = ({ auth, onClick }) => (
       <Link to="/blog">
          <Navbar.Brand>
             <img
-               src="https://react-bootstrap.github.io/logo.svg"
+               src="https://lh3.googleusercontent.com/proxy/A3sIy5cnKRTwXA2IJc904Bm9WZJCvUjCk7ZqybdmwzHwXpBOcjfTODXmDo4XLCPN7JFpX2U7dBH_uswODiidQP6grmH-F90fdgR5AngDHU5hmym1AopN-HMSyrNb2jVdcsHyc_4F4cQXtx4y12rGxE6diH9uysMJLPyWMbMjvBGVLMLNOnyrc2mKPNTio2RNcCsWCOMnOrwuCk21abk5DTY1wWp1JBp8CQr8ZELKXfC7IfsWRhGNlVB2CKV8hK_-KlxvGmPl_k_vxpNnWTzE1vDv3Nedw5T8Z_xVVkIITcbKpHyUgV__wNbpM9M3QQKDmX8FkZd-QTUqsVDTK9KWdRbst0g75KpfMgQ9sTINyFGsbj0EMtrnl7_YUrtHQeF5XSRQk7qQXAml9o4h"
                style={{ height: 30, width: 30 }}
                className="d-inline-block align-top"
                alt=""
             />
-            {" Bloggy "}
+            {"  Sagar's Blog "}
          </Navbar.Brand>
       </Link>
       <Nav className="ml-auto">
