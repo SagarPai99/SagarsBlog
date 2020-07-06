@@ -5,7 +5,6 @@ const bodyParser = require("body-parser");
 const passport = require("passport");
 const path = require("path");
 const users = require("./routes/api/users");
-const posts = require("./routes/api/posts");
 
 const app = express();
 
@@ -26,7 +25,7 @@ mongoose.Promise = global.Promise;
 app.use(passport.initialize());
 require("./middleware/passport")(passport);
 app.use("/api/users", users);
-app.use("/api/posts", posts);
+app.use("/api/posts/", require("./routes/api/posts"));
 
 if (process.env.NODE_ENV === "production") {
    app.use(express.static("client/build"));
@@ -37,12 +36,3 @@ if (process.env.NODE_ENV === "production") {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server up and running on port ${PORT}`));
-// app.get("/", (req,res) => {
-//     res.send("Hello");
-// });
-
-// app.post("/user", (req,res) => {
-//     console.log(req.body);
-//     res.send(req.body);
-// })
-

@@ -1,45 +1,45 @@
-@import "../../sass/styles.scss";
+@import "../../sass/styles";
 
-// ####### List Post
+// ############ List Post #####################
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px,400px));
-    grid-gap: 1em;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(260px, 400px));
+   grid-gap: 1em;
 }
 
 a:link {
-    text-decoration: none !important;
+   text-decoration: none !important;
 }
 
 .deckStyle {
-    @include box-shadow($cardShadowInitial);
+   @include box-shadow($cardShadowInitial);
 }
 
 .deckStyle:hover {
-    @include transition(0.4s);
-    @include box-shadow($cardShadowHover);
+   @include transition(0.4s);
+   @include box-shadow($cardShadowHover);
 }
 
-// ######## Post
+// ######### Post ############
 
 .postCover {
-    background: $themeColor;
-    color: $light;
+   background: $themeColor;
+   color: $light;
 }
 
-// ######## ViewPost
-
+// ############# ViewPost ##############
 
 .viewPost {
-    overflow-wrap: break-word;
+   overflow-wrap: break-word;
 }
 
 .postTitle {
-    color: $primaryColor;
+   color: $primaryColor;
 }
 
 .footerStyle {
-    color: $subtitleColor;
+   color: $subtitleColor;
 }
 
+// #################################
